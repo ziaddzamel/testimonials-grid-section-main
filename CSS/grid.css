@@ -1,0 +1,125 @@
+body{
+  font-family: 'Outfit', sans-serif;
+  position: relative;
+  background-color: hsl(210, 46%, 95%);
+}
+@media (max-width: 768px){
+  body{
+    height: 380vh;
+  }
+}
+
+.container{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+} 
+.boxes{
+  display: grid;
+  column-gap: 30px;
+  row-gap: 30px;
+  grid-template-columns: repeat(4, 300px);
+  grid-template-rows: repeat(2,300px);
+  
+}
+@media (max-width: 768px){
+  .boxes{
+    display: flex;
+    flex-direction: column;
+  }
+}
+.box-1{
+  grid-column-start: 1;
+  grid-column-end: 3;
+  background-color: hsl(263, 55%, 52%);
+  padding: 30px;
+  border-radius: 8px;
+
+}
+.box-2{
+  grid-column-start: 3;
+  grid-column-end: 4;
+  background-color: hsl(217, 19%, 35%);
+  padding: 30px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+}
+.box-3{
+  grid-column-start: 4;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  background-color: hsl(0, 0%, 100%);
+  padding: 30px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+}
+.box-4{
+  grid-column-start: 1;
+  grid-column-end: 2;
+  background-color: hsl(0, 0%, 100%) ;
+  padding: 30px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+}
+.box-5{
+  grid-column-start: 2;
+  grid-column-end: 4;
+  background-color: hsl(219, 29%, 14%);
+  padding: 30px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+}
+.avatar  {
+  display: flex;
+  color: hsl(210, 46%, 95%);
+}
+.box-3 .avatar p,.box-4 .avatar p{
+  color: hsl(219, 29%, 14%);
+}
+.box-3 .text h2,.box-4 .text h2{
+  color: hsl(219, 29%, 14%);
+}
+
+.avatar img{
+  width: 25px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+.avatar p{
+  font-size: 15px;
+  line-height: 1;
+}
+.avatar p span{
+  font-size: 10px;
+  color: hsl(0, 0%, 81%);
+  margin-bottom: 10px;
+}
+.boxes h2 {
+  font-size: 20px;
+  color: hsl(210, 46%, 95%);
+  margin-top: 10px;
+}
+.boxes .text p{
+  font-size: 13px;
+  color: hsl(0, 0%, 81%);
+  margin-top: 10px;
+}
+@media (max-width: 768px){
+  .boxes h2{
+    font-size: 20px;
+  }
+}
+@media (max-width: 768px){
+  .boxes .text p{
+    font-size: 13px;
+  }
+}
+.box-3 .text p,.box-4 .text p{
+  color: hsl(219, 29%, 14%);
+}
